@@ -5,7 +5,6 @@
 Crea una página HTML con el siguiente contenido:
 
 ```html
-
 <fieldset id="contents">
     <legend>Contenido</legend>
     <p>
