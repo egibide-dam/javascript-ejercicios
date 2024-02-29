@@ -2,43 +2,48 @@
 
 ## 1
 
-1. Crea un objeto llamado `aplicacion` con la propiedad `nombre` y valor "Aplicación Web".
-2. Añade las propiedades `puerto` (con el valor 8000) y `hostname` (con el valor "localhost")
-3. Muestra el valor de cada propiedad en pantalla.
-4. Elimina la propiedad hostname.
-5. Muestra el objeto completo en pantalla.
+Crea una página HTML con el siguiente contenido:
+
+```html
+
+<fieldset id="contents">
+    <legend>Contenido</legend>
+    <p>
+        Puedes leer la <a href="https://wikipedia.org">Wikipedia</a> o
+        visitar <a href="https://w3.org"><i>W3.org</i></a> para aprender más
+        sobre el desarrollo de aplicaciones web.
+    </p>
+</fieldset>
+```
+
+Captura los eventos de click en los enlaces, detén la navegación y muestra un `alert()` con la dirección de la URL.
 
 ## 2
 
-Modifica el código del ejemplo anterior para que muestre el valor de todas las propiedades del objeto `aplicacion`
-mediante un bucle for.
+¿Recuerdas el ejercicio de la lista de tareas?
+
+1. Añádele un formulario para recoger los valores de una nueva tarea y que la añada al final de la tabla al clickar en
+   un botón de envío.
+2. Mejora la aplicación añadiendo un enlace o botón de borrado a cada una de las tareas.
+3. Sigue mejorando la aplicación y añade la posibilidad de marcar una tarea como resuelta (es
+   suficiente con añadir un botón y que el texto se muestre tachado cuando esté resuelta).
 
 ## 3
 
-Crea un objeto llamado `cuentaCorriente` que contenga las siguientes propiedades:
-
-- `saldoInicial`: con valor de 1500
-- `compras`: con valor de -300
-- `alquiler`: con valor de -800
-
-Crea una función que reciba el objeto y, utilizando un bucle, calcule la suma de los valores de las propiedades del
-objeto.
+Partiendo del código disponible en [este CodePen](https://codepen.io/jonvadillo/pen/xxwXNRR) implementa el código
+JavaScript necesario para que la galería de imágenes muestre la imágen seleccionada en cada momento y evite la
+navegación de los enlaces.
 
 ## 4
 
-Crea un objeto llamado `inversiones` que contenga las siguientes propiedades:
+Mejora el ejercicio anterior para que genera la galería de imágenes partiendo de una lista de objetos como la siguiente:
 
-- `fondos`: con valor de 300
-- `oro`: con valor de 400
-
-Crea una función que reciba el objeto y un número entero por el cual tendrá que multiplicar todos los valores del
-objeto.
-
-## 5
-
-Crea la clase `FitnessCalc` que tenga dos métodos:
-
-- El primero convierte de kilómetros por hora a segundos por kilómetro y retorna el resultado en formato `MM:SS`.
-- El segundo recibe minutos y segundos para retornar kilómetros por hora.
-
-Instancia un objeto llamado `calculadora` y pon a prueba la clase.
+```javascript
+const urls = [{
+    id: 1,
+    url: "https://picsum.photos/id/1015/550/400"
+}, {
+    id: 2,
+    url: "https://picsum.photos/id/1018/550/400"
+}];
+```
